@@ -1,0 +1,9 @@
+.btn-Model {
+                    width: 300px;
+                    height: 100px;
+                    background-color:rgb(147, 152, 152);
+                    color: black;
+                    border: 0px solid rgb(140, 140, 140);
+                    border-radius: 0px;
+                    cursor: pointer;
+                }
