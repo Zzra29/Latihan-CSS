@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 11 Exercises - CSS Grid</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:white;
+      color:black;
+      padding:20px;
+    }
+
+    h1{
+      text-decoration:underline;
+      margin-bottom:20px;
+    }
+
+    h3{
+      margin-bottom:10px;
+    }
+
+    .exercise{
+      margin-bottom:30px;
+    }
+
+    .blue{
+      background:lightblue;
+      color:black;
+      padding:8px;
+    }
+
+    .pink{
+      background:lightpink;
+      color:black;
+      padding:8px;
+    }
+
+    /* 11a */
+    .grid-a{
+      display:grid;
+      grid-template-columns:200px 75px;
+    }
+
+    /* 11b */
+    .grid-b{
+      display:grid;
+      grid-template-columns:50px 1fr 75px;
+    }
+
+    /* 11c */
+    .grid-c{
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      column-gap:20px;
+      row-gap:10px;
+    }
+
+    /* 11d */
+    .friends-grid{
+      display:grid;
+      grid-template-columns:repeat(3, 200px);
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      box-shadow:0 0 5px rgba(0,0,0,0.3);
+    }
+
+    .profile-pic{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .card-content{
+      padding:10px;
+    }
+
+    .name{
+      font-weight:bold;
+      font-size:18px;
+      margin-bottom:8px;
+      color:black;
+    }
+
+    .mutual-row{
+      display:grid;
+      grid-template-columns:30px 1fr;
+      align-items:center;
+      column-gap:5px;
+      margin-bottom:10px;
+      color:gray;
+      font-size:14px;
+    }
+
+    .mutual-pic{
+      width:25px;
+      height:25px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+
+    .add-btn{
+      background:#1877f2;
+      color:white;
+      border:none;
+      padding:10px 16px;
+      border-radius:4px;
+      cursor:pointer;
+    }
+
+    .add-btn:hover{
+      opacity:0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 11a -->
+  <div class="exercise">
+    <h3>
+      11a. Create a grid with 2 columns with widths of 200px and 75px
+    </h3>
+
+    <div class="grid-a">
+      <div class="blue">200px</div>
+      <div class="pink">75px</div>
+    </div>
+  </div>
+
+  <!-- 11b -->
+  <div class="exercise">
+    <h3>
+      11b. Create a grid with 3 columns. Widths = 50px | remaining space | 75px
+    </h3>
+
+    <div class="grid-b">
+      <div class="blue">col1</div>
+      <div class="pink">col2</div>
+      <div class="blue">col3</div>
+    </div>
+  </div>
+
+  <!-- 11c -->
+  <div class="exercise">
+    <h3>
+      11c. Create a grid with 4 equal columns that take up the entire page.
+      Space between columns = 20px, space between rows = 10px
+    </h3>
+
+    <div class="grid-c">
+      <div class="pink">col1</div>
+      <div class="pink">col2</div>
+      <div class="pink">col3</div>
+      <div class="pink">col4</div>
+
+      <div class="pink">col1</div>
+      <div class="pink">col2</div>
+      <div class="pink">col3</div>
+      <div class="pink">col4</div>
+    </div>
+  </div>
+
+  <!-- 11d -->
+  <div class="exercise">
+    <h3>
+      11d. Create a grid of Facebook friend cards
+    </h3>
+
+    <div class="friends-grid">
+
+      <div class="card">
+        <img
+          src="https://placekitten.com/300/300"
+          alt="Oliver"
+          class="profile-pic"
+        >
+
+        <div class="card-content">
+          <div class="name">Oliver</div>
+
+          <div class="mutual-row">
+            <img
+              src="https://placekitten.com/50/50"
+              alt=""
+              class="mutual-pic"
+            >
+            <div>2 mutual friends</div>
+          </div>
+
+          <button class="add-btn">
+            Add Friend
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://placekitten.com/301/300"
+          alt="Mimi"
+          class="profile-pic"
+        >
+
+        <div class="card-content">
+          <div class="name">Mimi</div>
+
+          <div class="mutual-row">
+            <img
+              src="https://placekitten.com/51/50"
+              alt=""
+              class="mutual-pic"
+            >
+            <div>3 mutual friends</div>
+          </div>
+
+          <button class="add-btn">
+            Add Friend
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://placedog.net/300/300"
+          alt="Rex"
+          class="profile-pic"
+        >
+
+        <div class="card-content">
+          <div class="name">Rex</div>
+
+          <div class="mutual-row">
+            <img
+              src="https://placedog.net/50/50"
+              alt=""
+              class="mutual-pic"
+            >
+            <div>4 mutual friends</div>
+          </div>
+
+          <button class="add-btn">
+            Add Friend
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

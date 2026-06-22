@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 12 Exercises - Flexbox</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:white;
+      color:black;
+      padding:20px;
+    }
+
+    h1{
+      text-decoration:underline;
+      margin-bottom:20px;
+    }
+
+    h2{
+      margin:20px 0 10px;
+      font-size:20px;
+    }
+
+    .exercise{
+      margin-bottom:35px;
+    }
+
+    .blue{
+      background:lightblue;
+      padding:5px;
+    }
+
+    .pink{
+      background:lightpink;
+      padding:5px;
+    }
+
+    /* 12a */
+    .flex-a{
+      display:flex;
+    }
+
+    .flex-a .item1{
+      width:200px;
+    }
+
+    .flex-a .item2{
+      width:75px;
+    }
+
+    /* 12b */
+    .flex-b{
+      display:flex;
+    }
+
+    .flex-b .item1{
+      width:50px;
+    }
+
+    .flex-b .item2{
+      flex:1;
+    }
+
+    .flex-b .item3{
+      width:75px;
+    }
+
+    /* 12c */
+    .flex-c{
+      display:flex;
+      justify-content:space-between;
+    }
+
+    /* 12d */
+    .flex-d{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border:1px solid gray;
+      height:50px;
+      padding:0 10px;
+    }
+
+    /* 12e */
+    .notifications{
+      width:300px;
+      border:1px solid #ddd;
+      border-radius:6px;
+      padding:10px;
+    }
+
+    .notification-row{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin:10px 0;
+    }
+
+    .badge{
+      background:#4169e1;
+      color:white;
+      font-weight:bold;
+      border-radius:20px;
+      padding:3px 10px;
+    }
+
+    /* 12f */
+    .navbar{
+      background:#7a4fd3;
+      color:white;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:10px 15px;
+      max-width:800px;
+    }
+
+    .search-box{
+      flex:1;
+      margin:0 20px;
+      padding:8px 15px;
+      border:none;
+      border-radius:20px;
+    }
+
+    .download-btn{
+      background:transparent;
+      color:white;
+      border:1px solid white;
+      padding:8px 15px;
+      cursor:pointer;
+    }
+
+    /* 12g */
+    .twitter-list{
+      width:400px;
+    }
+
+    .profile{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:15px;
+    }
+
+    .profile-left{
+      display:flex;
+      align-items:center;
+    }
+
+    .profile-pic{
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-right:10px;
+    }
+
+    .name{
+      font-weight:bold;
+    }
+
+    .username,
+    .status{
+      color:gray;
+      font-size:14px;
+    }
+
+    .follow-btn{
+      background:#1d9bf0;
+      color:white;
+      border:none;
+      padding:8px 15px;
+      border-radius:4px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 12a -->
+  <div class="exercise">
+    <h2>12a. Create a flexbox with 2 items. Widths = 200px | 75px</h2>
+
+    <div class="flex-a">
+      <div class="blue item1">200px</div>
+      <div class="pink item2">75px</div>
+    </div>
+  </div>
+
+  <!-- 12b -->
+  <div class="exercise">
+    <h2>12b. A flexbox with 3 items. Widths = 50px | remaining space | 75px</h2>
+
+    <div class="flex-b">
+      <div class="blue item1">item1</div>
+      <div class="pink item2">item2</div>
+      <div class="blue item3">item3</div>
+    </div>
+  </div>
+
+  <!-- 12c -->
+  <div class="exercise">
+    <h2>12c. A flexbox with 4 items, spread evenly across the page</h2>
+
+    <div class="flex-c">
+      <div class="pink">item1</div>
+      <div class="pink">item2</div>
+      <div class="pink">item3</div>
+      <div class="pink">item4</div>
+    </div>
+  </div>
+
+  <!-- 12d -->
+  <div class="exercise">
+    <h2>12d. Create the flexbox below with height = 50px and a gray border</h2>
+
+    <div class="flex-d">
+      <div>item1</div>
+      <div>item2</div>
+    </div>
+  </div>
+
+  <h1>Challenge Exercises</h1>
+
+  <!-- 12e -->
+  <div class="exercise">
+    <h2>12e. Create this design</h2>
+
+    <div class="notifications">
+      <div class="notification-row">
+        <span>Home</span>
+        <span class="badge">14</span>
+      </div>
+
+      <div class="notification-row">
+        <span>Notifications</span>
+        <span class="badge">3</span>
+      </div>
+
+      <div class="notification-row">
+        <span>Messages</span>
+        <span class="badge">5</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12f -->
+  <div class="exercise">
+    <h2>12f. Create this design</h2>
+
+    <div class="navbar">
+      <div>Home</div>
+
+      <input
+        type="text"
+        class="search-box"
+        placeholder="Search"
+      >
+
+      <button class="download-btn">
+        Download
+      </button>
+    </div>
+  </div>
+
+  <!-- 12g -->
+  <div class="exercise">
+    <h2>12g. Create this design</h2>
+
+    <div class="twitter-list">
+
+      <div class="profile">
+        <div class="profile-left">
+          <img src="https://placekitten.com/200/200" class="profile-pic">
+
+          <div>
+            <div class="name">Oliver</div>
+            <div class="username">the cat</div>
+            <div class="status">Popular</div>
+          </div>
+        </div>
+
+        <button class="follow-btn">
+          Follow
+        </button>
+      </div>
+
+      <div class="profile">
+        <div class="profile-left">
+          <img src="https://placekitten.com/201/201" class="profile-pic">
+
+          <div>
+            <div class="name">Mimi</div>
+            <div class="username">Sleepy Cat</div>
+            <div class="status">Popular</div>
+          </div>
+        </div>
+
+        <button class="follow-btn">
+          Follow
+        </button>
+      </div>
+
+      <div class="profile">
+        <div class="profile-left">
+          <img src="https://placedog.net/200/200" class="profile-pic">
+
+          <div>
+            <div class="name">Rex</div>
+            <div class="username">Happy Bulldog</div>
+            <div class="status">Popular</div>
+          </div>
+        </div>
+
+        <button class="follow-btn">
+          Follow
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

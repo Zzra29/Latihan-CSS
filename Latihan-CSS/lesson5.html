@@ -68,10 +68,113 @@
         </style>
 
         <h3>5f. :</h3>
-        <div>
-        <span><small><font face="arial"><h1>1,049.61</h1></font></small></span> 
+        <div class="stock-price">
+  <p class="price">
+    1,049.61 <span class="currency">USD</span>
+  </p>
+
+  <p class="today-change">
+    +18.05 (1.75%) today
+  </p>
+
+  <p class="after-hours">
+    After hours 1,048.00
+    <span class="negative">
+      -1.61 (0.15%)
+    </span>
+  </p>
+</div>
         
-        </div>
+        <style>
+            .stock-price{
+  font-family: Arial, sans-serif;
+}
+
+.price{
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.currency{
+  font-size: 20px;
+  color: gray;
+}
+
+.today-change{
+  color: green;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.after-hours{
+  color: gray;
+  font-size: 20px;
+}
+
+.negative{
+  color: red;
+}
+        </style>
+
+        <h3>5g. :</h3>
+        <div class="tweet">
+
+  <p class="tweet-header">
+    <span class="account-name">
+      freeCodeCamp.org
+    </span>
+
+    <span class="account-info">
+      @freeCodeCamp 1h
+    </span>
+  </p>
+
+  <p class="tweet-text">
+    As a web developer, you'll want to make your projects
+    easy to use and navigate around.
+  </p>
+
+  <p class="tweet-text">
+    Here
+    <span class="mention">
+      @chp_it
+    </span>
+    outlines the top skills new developers should have.
+  </p>
+
+</div>
+
+<style>
+    .tweet{
+  font-family: Arial, sans-serif;
+  width: 600px;
+}
+
+.tweet-header{
+  margin-bottom: 10px;
+}
+
+.account-name{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.account-info{
+  color: gray;
+  font-size: 24px;
+}
+
+.tweet-text{
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.mention{
+  color: rgb(29, 155, 240);
+}
+</style>
         </body>
     </head>
 </html>
