@@ -1,129 +1,180 @@
-<html>
-    <head>
-        <body>
-            <h1>7a.</h1>
-            <center><img src="img.png" alt="gambar 1" class="no1" width="200px"></center>
-            <style> .no1 {
-                background: rgb(93, 93, 93);
-                border-radius: 20px;
-                object-fit: contain;
-            }
+<!DOCTYPE html>
+<html lang="id">
 
-            </style><hr><br>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 7 Exercises</title>
 
-            <h1>7b.</h1>
-            <center><img src="img.png" alt="gambar 1" class="no2" width="200px"></center>
-            <style> .no2 {
-                width:150px;
-                height: 150px;
-                object-fit: contain;
-                background: rgb(93, 93, 93);
-                border-radius: 0px;
-            }
-            </style><hr><br>
+<style>
+body{
+    font-family: Arial, sans-serif;
+}
 
-            <h1>7c.</h1>
-            <center><img src="img.png" alt="gambar 1" class="no3" width="200px"></center>
-            <style> .no3 {
-                width:200px;
-                height: 200px;
-                object-fit: contain;
-                background: rgb(93, 93, 93);
-                border-radius: 50%;
-            }
-            </style><hr><br>
+.center{
+    text-align: center;
+}
 
+.no1{
+    width: 200px;
+    background: rgb(93,93,93);
+    border-radius: 20px;
+    object-fit: contain;
+}
 
-            <h1>7d</h1>
-            <input type="text" name="Search" id="Search" class="no7" placeholder="Search">
-            <style>
-                .no7 {
-                    width: 200px;
-                    height: 40px;
-                    background: white;
-                    border: 1px solid rgb(85, 84, 84);
-                    border-radius: 8px;
-                }
-            </style><hr>
+.no2{
+    width: 150px;
+    height: 150px;
+    background: rgb(93,93,93);
+    object-fit: contain;
+}
 
+.no3{
+    width: 200px;
+    height: 200px;
+    background: rgb(93,93,93);
+    object-fit: contain;
+    border-radius: 50%;
+}
 
-            <h1>7e</h1>
-            <input type="text" name="Search" placeholder="Search Google or Type a URL" class="no8">
-            <style>
-                .no8 {
-                    width: 400px;
-                    height: 40px;
-                    border: 0px solid white;
-                    box-shadow: 0 0 3px gray;
-                    background: white;
-                    border-radius: 20px;
-                    padding-left: 15px;
+.no7{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(85,84,84);
+    border-radius: 8px;
+    padding-left: 10px;
+}
 
-                }
-            </style><hr>
+.no8{
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 5px gray;
+    padding-left: 15px;
+}
 
-            <font color="red"><h1><u>Chalenge Exercise</u></h1></font>
-            <h1>7f</h1>
-            <font color="gray" face="arial">Email</font><br>
-            <input type="text" class="no9">
-            <style>
-                .no9 {
-                    width: 250px;
-                    height: 30px;
-                    border: 1px solid rgb(0, 0, 0);
+.no9{
+    width: 250px;
+    height: 30px;
+    border: 1px solid black;
+}
 
-                }
-            </style>
-            <br><br>
-            <font color="gray" face="arial"><small>By Clicking Agree & Join, you agree to the Privacy Policy.</small></font><br><br>
+.btn-agree{
+    width: 250px;
+    height: 40px;
+    background: rgb(19,113,206);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
-            <style>
-                .btn_Agree {
-                    width: 250px;
-                    height: 40px;
-                    background: rgb(19, 113, 206);
-                    border: 0px solid white;
-                    border-radius: 20px;
-                    color: white;
-                    cursor: pointer;
-                }
-            </style>
+.no4{
+    width: 50px;
+    height: 50px;
+    background: rgb(93,93,93);
+    border-radius: 50%;
+    object-fit: contain;
+    vertical-align: middle;
+}
 
-            <button class="btn_Agree">Agree & Join</button><hr>
+.input{
+    width: 220px;
+    height: 40px;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    margin-left: 10px;
+}
 
-            <h1>7g</h1>
-            <br><img src="img.png" alt="gambar 1" class="no4" width="200px"><input type="text" placeholder="What's Happening?" class="input"><button class="btn-tweet">Tweet</button>
-            <style> .no4 {
-                width:50px;
-                height: 50px;
-                object-fit: contain;
-                background: rgb(93, 93, 93);
-                border-radius: 50%;
-                vertical-align: middle;
-            }
+.btn-tweet{
+    width: 70px;
+    height: 30px;
+    background: rgb(20,125,237);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+</style>
 
-                .input {
-                    width: 200px;
-                    height: 40px;
-                    background: white;
-                    color: gray;
-                    border: none;
-                    vertical-align: middle;
-                    outline: none;
+</head>
 
-                }
-                .btn-tweet {
-                    width: 70px;
-                    height: 30px;
-                    background: rgb(20, 125, 237);
-                    border: 0px solid white;
-                    border-radius: 15px;
-                    color: white;
-                    font-family: Arial, Helvetica, sans-serif;
-                    cursor: pointer;
-                }
+<body>
 
-            </style> 
-        </body>
-    </head>
+<h1>7a.</h1>
+
+<div class="center">
+    <img src="img.png" alt="gambar 1" class="no1">
+</div>
+
+<hr>
+
+<h1>7b.</h1>
+
+<div class="center">
+    <img src="img.png" alt="gambar 1" class="no2">
+</div>
+
+<hr>
+
+<h1>7c.</h1>
+
+<div class="center">
+    <img src="img.png" alt="gambar 1" class="no3">
+</div>
+
+<hr>
+
+<h1>7d.</h1>
+
+<input type="text" class="no7" placeholder="Search">
+
+<hr>
+
+<h1>7e.</h1>
+
+<input type="text" class="no8" placeholder="Search Google or type a URL">
+
+<hr>
+
+<h1 style="color:red;">
+    <u>Challenge Exercise</u>
+</h1>
+
+<h1>7f.</h1>
+
+<p style="color:gray;">Email</p>
+
+<input type="text" class="no9">
+
+<br><br>
+
+<p style="color:gray; font-size:14px;">
+    By clicking Agree & Join, you agree to the Privacy Policy.
+</p>
+
+<button class="btn-agree">
+    Agree & Join
+</button>
+
+<hr>
+
+<h1>7g.</h1>
+
+<img src="img.png" alt="gambar 1" class="no4">
+
+<input
+    type="text"
+    class="input"
+    placeholder="What's happening?"
+>
+
+<button class="btn-tweet">
+    Tweet
+</button>
+
+</body>
+
 </html>

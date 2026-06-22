@@ -1,248 +1,320 @@
-<html>
-    <head>
-        <body>
-            <h3>9a.</h3>
 
-            <div class="box"></div>
-            <hr>
-            
-            <h3>9b.</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 9 Exercises</title>
 
-            <div class="square"></div>
-            <hr>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-            <h3>9c.</h3>
+body{
+    background:white;
+    padding:20px;
+}
 
-            <div class="border">
-                <font face="arial"><h3>Satisfied with our service?</h3></font>
-                <button class="bt">Yes</button> <button class="bt">No</button>
-            </div>
+h1{
+    text-decoration:underline;
+    margin-bottom:20px;
+}
 
-            <hr>
+h3{
+    margin-bottom:10px;
+}
 
-            <h3>9d.</h3>
+.exercise{
+    margin-bottom:30px;
+}
 
-            <div class="border2">
-                <h3>Install Youtube Music</h3>
-                <p><font color="gray" size="2px">Add Youtube Music to your dekstop for quick and
-                    easy access.</font></p> 
-            </div>
+/* 9A */
+.box{
+    width:50px;
+    height:50px;
+    background:red;
+}
 
-            <hr>
+/* 9B */
+.square{
+    width:50px;
+    height:50px;
+    background:rgb(2,149,51);
+    border-radius:50%;
+}
 
-            <h3>9e.</h3>
+/* 9C */
+.border{
+    width:300px;
+    border:2px solid rgb(207,207,207);
+    padding:15px;
+}
 
-            <div class="borderr">
-                <img src="img.png" alt="gambar 1" class="profile" width="200px">
-                <input type="text" placeholder="What's Happening?" class="input">
-                <button class="btn-tweet">Tweet</button>
-            </div>
+.border button{
+    cursor:pointer;
+}
 
-            <hr>
+/* 9D */
+.border2{
+    width:300px;
+    background:rgb(29,29,29);
+    color:white;
+    padding:15px;
+}
 
-            <font color="red"><u><h1>Chalenge Exercise</h1></u></font>
+.border2 p{
+    color:gray;
+    margin-top:10px;
+}
 
-            <h3>9f.</h3>
+/* 9E */
+.borderr{
+    width:340px;
+    padding:10px;
+    border-radius:8px;
+    box-shadow:0 0 3px rgb(120,120,120);
+}
 
-            <div class="borderrr">
-                <img src="Fotos.png" alt="Me" class="img">
-                <p class="font">Oliver</p>
-                <p class="font2">2 mutual friends</p>
-                <button class="btn">Add Friend</button>
-            </div>
-            
-            <hr>
+.profile{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+    vertical-align:middle;
+}
 
-            <h3>9g.</h3>
+.input{
+    width:200px;
+    border:none;
+    outline:none;
+    margin:0 10px;
+    vertical-align:middle;
+}
 
-            <div class="borderrrr">
-                <img src="Fotos.png" alt="Me" class="img">
-                <p class="font">Oliver</p>
-                <p class="font2">2 mutual friends</p>
-                <button class="btn">Add Friend</button>
-            </div>
+.btn-tweet{
+    background:rgb(20,125,237);
+    color:white;
+    border:none;
+    border-radius:15px;
+    padding:8px 15px;
+    cursor:pointer;
+}
 
-            <div class="borderrrr">
-                <img src="Fotos2.png" alt="Me" class="img">
-                <p class="font">Mimi</p>
-                <p class="font2">3 mutual friends</p>
-                <button class="btn">Add Friend</button>
-            </div>
+/* Challenge */
+.challenge{
+    color:red;
+    text-decoration:underline;
+    margin-bottom:20px;
+}
 
-            <div class="borderrrr">
-                <img src="Fotos3.jpg" alt="Me" class="img">
-                <p class="font">Rex</p>
-                <p class="font2">4 mutual friends</p>
-                <button class="btn">Add Friend</button>
-            </div>
+/* 9F & 9G */
+.friend-card{
+    width:170px;
+    box-shadow:0 0 4px rgba(0,0,0,.3);
+    display:inline-block;
+    margin-right:10px;
+    vertical-align:top;
+}
 
-            <hr>
+.friend-card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+}
 
-            <h3>9h.</h3>
-            
-            <div class="last">
-                <img src="Google.png" alt="Google" width="200px">   
-                <br>
-                <input type="text" placeholder="Search Google or type a URL" class="class1">
-                <br>
-                <button class="btn2">Google Search</button>
-                <button class="btn2">I'm Feel Lucky</button>
-            </div>
+.friend-info{
+    padding:10px;
+}
 
-            <style>
-                .box {
-                    width: 50px;
-                    height: 50px;
-                    background-color: red;
-                }
+.name{
+    font-weight:bold;
+    margin-bottom:5px;
+}
 
-                .square {
-                    width: 50px;
-                    height: 50px;
-                    background-color: rgb(2, 149, 51);
-                    border-radius: 50px;
-                }
+.mutual{
+    color:gray;
+    font-size:14px;
+    margin-bottom:10px;
+}
 
-                .bt {
-                    cursor: pointer;
-                }
+.btn{
+    background:rgb(19,113,206);
+    color:white;
+    border:none;
+    border-radius:4px;
+    padding:8px 14px;
+    cursor:pointer;
+}
 
-                .border {
-                    width: 300px;
-                    height: 100px;
-                    border: 2px solid rgb(207, 207, 207);
-                    padding-left: 10px;
-                }
+.btn:hover{
+    background:rgb(20,125,237);
+}
 
-                .border2 {
-                    width: 300px;
-                    height: 100px;
-                    background-color: rgb(29, 29, 29);
-                    color: white;
-                    padding: 10px;
-                    font-family: Arial, Helvetica, sans-serif
-                }
+/* 9H */
+.last{
+    text-align:center;
+}
 
-                .profile {
-                    width:50px;
-                    height: 50px;
-                    object-fit: contain;
-                    background: rgb(93, 93, 93);
-                    border-radius: 50%;
-                    vertical-align: middle;
-                }
+.google-search{
+    width:500px;
+    height:40px;
+    border:none;
+    border-radius:23px;
+    box-shadow:0 0 3px gray;
+    padding-left:20px;
+    outline:none;
+    margin:15px 0;
+}
 
-                .input {
-                    width: 200px;
-                    height: 40px;
-                    background: white;
-                    color: gray;
-                    border: none;
-                    vertical-align: middle;
-                    outline: none;
-                }
+.btn2{
+    width:130px;
+    height:40px;
+    border:none;
+    background:rgb(227,225,225);
+    cursor:pointer;
+}
 
-                .btn-tweet {
-                    width: 70px;
-                    height: 30px;
-                    background: rgb(20, 125, 237);
-                    border: 0px solid white;
-                    border-radius: 15px;
-                    color: white;
-                    font-family: Arial, Helvetica, sans-serif;
-                    cursor: pointer;
-                }
+.btn2:hover{
+    box-shadow:0 0 3px rgb(70,70,70);
+}
+</style>
+</head>
 
-                .borderr {
-                    width: 340px;
-                    height: 55px;
-                    border: none;
-                    box-shadow:0 0 2px rgb(70, 70, 70);
-                    border-radius: 8px;
-                    padding: 5px;
-                }
+<body>
 
-                .img {
-                    width: 150px;
-                    height: 150px;
-                    object-fit: fill;
-                }
+<h1>Lesson 9 Exercises</h1>
 
-                .font {
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-weight: bold;
-                }
+<div class="exercise">
+    <h3>9A.</h3>
+    <div class="box"></div>
+</div>
 
-                .font2 {
-                    font-family: Arial, Helvetica, sans-serif;
-                    color: gray;
-                    margin-top: -10px;
-                }
+<hr><br>
 
-                .btn {
-                    width: 110px;
-                    height: 30px;
-                    background-color: rgb(19, 113, 206);
-                    border: 0px solid white;
-                    border-radius: 3px;
-                    color: white;
-                    cursor: pointer;
-                }
+<div class="exercise">
+    <h3>9B.</h3>
+    <div class="square"></div>
+</div>
 
-                .btn:hover {
-                    background-color: rgb(20, 125, 237);
-                }
+<hr><br>
 
-                .borderrr {
-                    width: 150px;
-                    height: 250px;
-                    border: none;
-                    box-shadow: 0 0 2px rgb(70, 70, 70);
-                    border-radius: 2px;
-                    padding: 10px;
-                }
+<div class="exercise">
+    <h3>9C.</h3>
 
-                .borderrrr {
-                    width: 150px;
-                    height: 250px;
-                    border: none;
-                    box-shadow: 0 0 2px rgb(70, 70, 70);
-                    border-radius: 2px;
-                    padding: 10px;
-                    display: inline-block;
-                }
+    <div class="border">
+        <h3>Satisfied with our service?</h3>
+        <button>Yes</button>
+        <button>No</button>
+    </div>
+</div>
 
-                .class1 {
-                        width: 500px;
-                        height: 40px;
-                        border: none;
-                        border-radius: 23px;
-                        box-shadow: 0 0 3px 0 gray;
-                        text-align: start;
-                        font-family: Arial, Helvetica, sans-serif;
-                        padding-left: 20px;
-                        margin-bottom: 20px;
-                        margin-top: 10px;
-                        outline: none;
-                }
+<hr><br>
 
-                .last {
-                    text-align: center;
-                }
+<div class="exercise">
+    <h3>9D.</h3>
 
-                .btn2 {
-                        width: 120px;
-                        height: 40px;
-                        background-color: rgb(227, 225, 225);
-                        border: none;
-                        cursor: pointer;
-                }
+    <div class="border2">
+        <h3>Install YouTube Music</h3>
+        <p>
+            Add YouTube Music to your desktop for quick
+            and easy access.
+        </p>
+    </div>
+</div>
 
-                .btn2:hover {
-                    background-color: rgb(227, 225, 225);
-                    box-shadow: 0 0 3px rgb(70, 70, 70);
-                }
-            </style>
-        </body>
-    </head>
+<hr><br>
+
+<div class="exercise">
+    <h3>9E.</h3>
+
+    <div class="borderr">
+        <img src="img.png" alt="Profile" class="profile">
+        <input type="text" placeholder="What's happening?" class="input">
+        <button class="btn-tweet">Tweet</button>
+    </div>
+</div>
+
+<hr><br>
+
+<h1 class="challenge">Challenge Exercise</h1>
+
+<div class="exercise">
+    <h3>9F.</h3>
+
+    <div class="friend-card">
+        <img src="Fotos.png" alt="Oliver">
+
+        <div class="friend-info">
+            <p class="name">Oliver</p>
+            <p class="mutual">2 mutual friends</p>
+            <button class="btn">Add Friend</button>
+        </div>
+    </div>
+</div>
+
+<hr><br>
+
+<div class="exercise">
+    <h3>9G.</h3>
+
+    <div class="friend-card">
+        <img src="Fotos.png" alt="Oliver">
+
+        <div class="friend-info">
+            <p class="name">Oliver</p>
+            <p class="mutual">2 mutual friends</p>
+            <button class="btn">Add Friend</button>
+        </div>
+    </div>
+
+    <div class="friend-card">
+        <img src="Fotos2.png" alt="Mimi">
+
+        <div class="friend-info">
+            <p class="name">Mimi</p>
+            <p class="mutual">3 mutual friends</p>
+            <button class="btn">Add Friend</button>
+        </div>
+    </div>
+
+    <div class="friend-card">
+        <img src="Fotos3.jpg" alt="Rex">
+
+        <div class="friend-info">
+            <p class="name">Rex</p>
+            <p class="mutual">4 mutual friends</p>
+            <button class="btn">Add Friend</button>
+        </div>
+    </div>
+</div>
+
+<hr><br>
+
+<div class="exercise">
+    <h3>9H.</h3>
+
+    <div class="last">
+
+        <img src="Google.png" alt="Google" width="200">
+
+        <br>
+
+        <input
+            type="text"
+            placeholder="Search Google or type a URL"
+            class="google-search">
+
+        <br>
+
+        <button class="btn2">Google Search</button>
+        <button class="btn2">I'm Feeling Lucky</button>
+
+    </div>
+</div>
+
+</body>
 </html>
