@@ -1,74 +1,204 @@
-<html>
-    <head>
-        <body>
-            <hr>
-         <h3>5a. font = Tahoma</h3>
-         <strong><font face="tahoma" size="5">This is Tahoma Font</font></strong>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 5 Exercises</title>
 
-            <hr>
+<style>
+body{
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
 
-         <h3>5b. font = Arial </h3>
-         <strong><font face="arial" size="5">Biggest Deals of the Year!</font><br></strong>
-         <em><font face="arial" size="3" color="red">Sales end Tuesday</font></em>
+/* Buttons */
+.btn-getstarted{
+  width:150px;
+  height:40px;
+  background:green;
+  color:white;
+  border:none;
+  border-radius:7px;
+  cursor:pointer;
+}
 
-            <hr>
+.btn-learnmore{
+  background:white;
+  border:none;
+  color:blue;
+  cursor:pointer;
+  font-size:16px;
+}
 
-        <h3>5c. font = Verdana</h3>
-        <strong><font face="verdana" size="5">HTML CSS Course</font></strong><br>
-        <font face="verdana" size="3" color="gray">Beginner to Pro</font><br><br>
-        <font face="verdana" size="3">In this course, we'll learn the skills<br>you need to become a developer.</font><br><br>
-        <style>.btn-getstarted {
-        width: 150px;
-        height: 40px;
-        background-color: green;
-        color: white;
-        border: 0px solid black;
-        border-radius: 7px;
-        font-size: 16px;
-        cursor: pointer;
-        }
-        </style>
-      <a href="https://www.steamrip.com"><button class="btn-getstarted">Get Started</button></a>  
+.btn-buy{
+  width:60px;
+  height:30px;
+  background:#2d6cdf;
+  color:white;
+  border:none;
+  border-radius:15px;
+  cursor:pointer;
+}
 
-           <hr>
+/* 5f */
+.stock-price{
+  font-family: Arial, sans-serif;
+}
 
-        <h3>5d. font = Arial</h3>
-       <center><strong><font face="arial" size="5">Shopping for your Bussines?</font><br><br></strong></center>
-       <center ><font face="arial" size="3">See how Apple at Work can help.</font></center>
-       <center><a href="https://www.apple.com"><button class="btn-learnmore">Learn more ></button></a></center>
-       <style>.btn-learnmore {
-        width: 120px;
-        height: 40px;
-        background-color: white;
-        border: 0px solid white;
-        color: blue;
-        cursor: pointer;
-        }
-       </style>
-       <hr>
-               
+.price{
+  font-size:40px;
+  margin-bottom:8px;
+}
 
-       <h1><font color="red"><u>Chalenge Exercise</u></font></h1>
-        <h3>5e. :</h3>
-        <center><font face="arial" color="orange"><h4>New</h4></font>
-        <strong><font face="arial" >MacBook Pro</font></strong>
-        <strong><h1><font face="arial">Supercharged for pros.</font></h1></strong>
-        <font face="arial">from $1999</font>
-        <br><br><a href="https://www.apple.com"><button class="btn-buy">Buy</button></a></center>
-        <style>.btn-buy {
-            width: 60px;
-            height: 30px;
-            background-color: blue;
-            color: white;
-            border: 0px  solid blue;
-            border-radius: 20px;
-            cursor: pointer;
+.currency{
+  font-size:20px;
+  color:gray;
+}
 
-        }
-        </style>
+.today-change{
+  color:green;
+  font-size:20px;
+  margin-bottom:8px;
+}
 
-        <h3>5f. :</h3>
-        <div class="stock-price">
+.after-hours{
+  color:gray;
+  font-size:20px;
+}
+
+.negative{
+  color:red;
+}
+
+/* 5g */
+.tweet{
+  width:600px;
+  font-family: Arial, sans-serif;
+}
+
+.tweet-header{
+  margin-bottom:10px;
+}
+
+.account-name{
+  font-weight:bold;
+  font-size:24px;
+}
+
+.account-info{
+  color:gray;
+  font-size:24px;
+}
+
+.tweet-text{
+  font-size:24px;
+  line-height:36px;
+  margin-bottom:25px;
+}
+
+.mention{
+  color:rgb(29,155,240);
+}
+
+/* Utility */
+.center{
+  text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+<hr>
+
+<h3>5a. Font = Tahoma</h3>
+<p style="font-family:Tahoma;font-size:32px;font-weight:bold;">
+  This is Tahoma Font
+</p>
+
+<hr>
+
+<h3>5b. Font = Arial</h3>
+
+<p style="font-family:Arial;font-size:32px;font-weight:bold;margin-bottom:5px;">
+  Biggest Deals of the Year!
+</p>
+
+<p style="font-family:Arial;color:red;font-style:italic;">
+  Sales end Tuesday
+</p>
+
+<hr>
+
+<h3>5c. Font = Verdana</h3>
+
+<p style="font-family:Verdana;font-size:28px;font-weight:bold;">
+  HTML CSS Course
+</p>
+
+<p style="font-family:Verdana;color:gray;">
+  Beginner to Pro
+</p>
+
+<p style="font-family:Verdana;">
+  In this course, we'll learn the skills<br>
+  you need to become a developer.
+</p>
+
+<a href="https://www.steamrip.com">
+  <button class="btn-getstarted">
+    Get Started
+  </button>
+</a>
+
+<hr>
+
+<h3>5d. Font = Arial</h3>
+
+<div class="center">
+  <h2>Shopping for your Business?</h2>
+
+  <p>See how Apple at Work can help.</p>
+
+  <a href="https://www.apple.com">
+    <button class="btn-learnmore">
+      Learn more &gt;
+    </button>
+  </a>
+</div>
+
+<hr>
+
+<h1 style="color:red;">
+  <u>Challenge Exercises</u>
+</h1>
+
+<!-- 5E -->
+<h3>5e.</h3>
+
+<div class="center">
+  <p style="color:orange;">New</p>
+
+  <h2 style="margin:0;">MacBook Pro</h2>
+
+  <h1 style="margin:10px 0;">
+    Supercharged for pros.
+  </h1>
+
+  <p>From $1999</p>
+
+  <a href="https://www.apple.com">
+    <button class="btn-buy">Buy</button>
+  </a>
+</div>
+
+<hr>
+
+<!-- 5F -->
+<h3>5f.</h3>
+
+<div class="stock-price">
   <p class="price">
     1,049.61 <span class="currency">USD</span>
   </p>
@@ -84,40 +214,13 @@
     </span>
   </p>
 </div>
-        
-        <style>
-            .stock-price{
-  font-family: Arial, sans-serif;
-}
 
-.price{
-  font-size: 40px;
-  margin-bottom: 8px;
-}
+<hr>
 
-.currency{
-  font-size: 20px;
-  color: gray;
-}
+<!-- 5G -->
+<h3>5g.</h3>
 
-.today-change{
-  color: green;
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-.after-hours{
-  color: gray;
-  font-size: 20px;
-}
-
-.negative{
-  color: red;
-}
-        </style>
-
-        <h3>5g. :</h3>
-        <div class="tweet">
+<div class="tweet">
 
   <p class="tweet-header">
     <span class="account-name">
@@ -136,45 +239,11 @@
 
   <p class="tweet-text">
     Here
-    <span class="mention">
-      @chp_it
-    </span>
+    <span class="mention">@chp_it</span>
     outlines the top skills new developers should have.
   </p>
 
 </div>
 
-<style>
-    .tweet{
-  font-family: Arial, sans-serif;
-  width: 600px;
-}
-
-.tweet-header{
-  margin-bottom: 10px;
-}
-
-.account-name{
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.account-info{
-  color: gray;
-  font-size: 24px;
-}
-
-.tweet-text{
-  font-size: 24px;
-  line-height: 36px;
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-
-.mention{
-  color: rgb(29, 155, 240);
-}
-</style>
-        </body>
-    </head>
+</body>
 </html>

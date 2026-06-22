@@ -1,195 +1,210 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="id">
+
 <head>
-    <body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 3 Exercises</title>
 
-<font color="black"><u><h1>Lesson 2 Exercises - CSS Basic</h1></u></font>
-3a. Uber
-<br>
-<style>.btn-kotak {
-  width: 120px;
-  height: 50px;
-  background-color: #000000;
-  color: white;
-  border: 2px solid #000000;
-  border-radius: 0px;
-  font-size: 16px;
-  cursor: pointer;
-  opacity: 1;
-}
-.btn-kotak:hover {
-    opacity: 0.8;
+<style>
+body{
+    font-family: Arial, sans-serif;
 }
 
+.btn-kotak{
+    width:120px;
+    height:50px;
+    background:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.btn-kotak:hover{
+    opacity:0.8;
+}
+
+.btn-lonjong{
+    width:200px;
+    height:50px;
+    background:rgb(255,216,20);
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+}
+
+.btn-lonjong:hover{
+    opacity:0.8;
+}
+
+.btn-github{
+    width:120px;
+    height:50px;
+    background:rgb(46,164,79);
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+}
+
+.btn-github:hover{
+    opacity:0.8;
+}
+
+.btn-bootstrap{
+    width:120px;
+    height:40px;
+    background:rgb(121,82,179);
+    color:white;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.btn-bootstrap:hover{
+    background:rgb(105,69,159);
+}
+
+.btn-download{
+    width:120px;
+    height:40px;
+    background:white;
+    color:gray;
+    border:1px solid rgb(108,117,125);
+    border-radius:4px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn-download:hover{
+    background:gray;
+    color:white;
+}
+
+.btn-linkedin{
+    width:300px;
+    height:40px;
+    background:rgb(10,102,194);
+    color:white;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.btn-linkedin:hover{
+    background:rgb(2,38,111);
+}
+
+.btn-save{
+    width:100px;
+    height:40px;
+    background:white;
+    color:rgb(10,102,194);
+    border:1px solid rgb(10,102,194);
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.btn-save:hover{
+    background:rgb(183,229,249);
+}
+
+.btn-add{
+    width:120px;
+    height:40px;
+    background:rgb(255,216,20);
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.btn-add:hover{
+    opacity:0.8;
+}
+
+.btn-buy{
+    width:120px;
+    height:40px;
+    background:rgb(255,164,28);
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.btn-buy:hover{
+    opacity:0.8;
+}
+
+.stock{
+    color:rgb(0,118,0);
+    font-weight:bold;
+}
 </style>
+
+</head>
+
+<body>
+
+<h1><u>Lesson 3 Exercises - Hovers, Transitions and Shadows</u></h1>
+
+<p>3a. Uber</p>
 <button class="btn-kotak">Request Now</button>
 
 <hr>
-<!--  -->
-3b. Amazon
-<br>
-<style>.btn-lonjong {
-  width: 200px;
-  height: 50px;
-  background-color: rgb(255, 216, 20);
-  color: rgb(0, 0, 0);
-  border: 2px solid rgb(255, 216, 20);
-  border-radius: 50px; 
-  font-size: 16px;
-  cursor: pointer;
-  opacity: 1;
-}
 
-.btn-lonjong:hover {
-    opacity: 0.8;
-}   
-
-</style>
-<a href="https://www.amazon.com"><button class="btn-lonjong">Add to Cart</button></a>
+<p>3b. Amazon</p>
+<a href="https://www.amazon.com" target="_blank">
+    <button class="btn-lonjong">Add to Cart</button>
+</a>
 
 <hr>
-<!--  -->
-3c. Github
-<br>
-<style>.btn-Github {
-  width: 120px;
-  height: 50px;
-  background-color: rgb(46, 164, 79);
-  color: rgb(255, 255, 255);
-  border: 2px solid  rgb(46, 164, 79);
-  border-radius: 10px; 
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 0px 0px 2px 0 black;
-  opacity: 1;
-}
 
-.btn-Github:hover {
-    opacity: 0.8;
-}
-
-</style>
-<button class="btn-Github">Sign Up</button>
+<p>3c. GitHub</p>
+<button class="btn-github">Sign Up</button>
 
 <hr>
-<!--  -->
-3d. Bootstrap
-<br>
-<style> .btn-Bootstrap {
-    width: 120px;
-    height: 40px;
-    background-color: rgb(121,82, 179);
-    color: white;
-    border:  1px solid rgb(121, 82, 179);
-    border-radius: 3px;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
-}
-.btn-Bootstrap:hover {
-    background-color: rgb(105, 69, 159);
 
-}
-   .btn-download { 
-    width: 120px;
-    height: 40px;
-    background-color: white;
-    color:gray;
-    border: 0.1px solid rgb(108, 117, 125);;
-    border-radius: 3px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor:pointer;
-
-}
-.btn-download:hover {
-    background-color: gray;
-    color: white;
-}
-    </style>
-<button class="btn-Bootstrap">Get Started</button>
- <button class="btn-download">Download</button>
+<p>3d. Bootstrap</p>
+<button class="btn-bootstrap">Get Started</button>
+<button class="btn-download">Download</button>
 
 <hr>
-<!--  -->
-3e. LinkedIn
-<br>
-<style>.btn-LinkedIn {
-    width: 300px;
-    height: 40px;
-    background-color: rgb(10,102,194);
-    color: white;
-    border: 0px solid white;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
 
-}
-.btn-LinkedIn:hover {
-    background-color: rgb(2, 38, 111);
-
-
-}
-.btn-save {
-    width: 100px;
-    height: 40px;
-    background-color: white;
-    color: rgb(10,102,194);
-    border: 0.1px solid rgb(10,102,194);
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.btn-save:hover {
-    background-color:rgb(183, 229, 249);
-}
-</style>
-<button class="btn-LinkedIn">Apply on company website</button>
+<p>3e. LinkedIn</p>
+<button class="btn-linkedin">Apply on company website</button>
 <button class="btn-save">Save</button>
 
-<hr><br>
-<!--  -->
-<font color="red"><u><h1>Chalenge Exercise</h1></u></font></u>
-3f.
-<a href="https://www.amazon.com">Back to Amazon</a>
-<br>
+<hr>
+
+<h1 style="color:red;">
+    <u>Challenge Exercise</u>
+</h1>
+
+<p>3f.</p>
+
+<a href="https://www.amazon.com" target="_blank">
+    Back to Amazon
+</a>
 
 <h1>Nike Black Running Shoes</h1>
-<font face="Tahoma" color=rgb(0, 118, 0)>
-    <h4>$39 - in stock.</h4></font>
 
-    <h3>Free delivery tomorrow.</h3>
+<h3 class="stock">
+    $39 - in stock.
+</h3>
 
-<style>.btn-Add {
-    width: 120px;
-    height: 40px;
-    background-color: rgb(255, 216, 20);
-    color: black;
-    border: 0px solid black;
-    border-radius: 20px;
-    cursor: pointer;
-    opacity: 1;
-}
+<h3>
+    Free delivery tomorrow.
+</h3>
 
-.btn-Add:hover {
-    opacity: 0.8;
-}
-.btn-Buy {
-    width: 120px;
-    height: 40px;
-    background-color: rgb(255, 164, 28);
-    color: black;
-    border: 0px solid black;
-    border-radius: 20px;
-    cursor: pointer;
-    opacity: 1;
-}
+<button class="btn-add">
+    Add to Cart
+</button>
 
-.btn-Buy:hover {
-    opacity: 0.8;
-}
-</style>
-<button class="btn-add">Add to Cart</button>
-<button class="btn-buy">Buy Now</button>
-    </body>
-</head>
+<button class="btn-buy">
+    Buy Now
+</button>
+
+</body>
 </html>
