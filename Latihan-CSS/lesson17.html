@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 17 Exercises - More CSS Features</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:white;
+  color:black;
+  padding:20px;
+}
+
+.exercise{
+  margin-bottom:50px;
+}
+
+h2{
+  margin-bottom:15px;
+}
+
+/* ==========================
+   VIDEO GRID
+========================== */
+
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:20px;
+  max-width:1000px;
+}
+
+.video-card{
+  width:100%;
+}
+
+.thumbnail{
+  width:100%;
+  display:block;
+}
+
+.video-info{
+  display:grid;
+  grid-template-columns:50px 1fr;
+  margin-top:10px;
+}
+
+.profile-picture{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.video-title{
+  font-size:14px;
+  line-height:20px;
+  font-weight:bold;
+  margin-bottom:5px;
+}
+
+.video-author,
+.video-stats{
+  font-size:12px;
+  color:gray;
+}
+
+/* ==========================
+   17A MEDIA QUERY
+========================== */
+
+@media (min-width:1000px){
+
+  .video-title{
+    font-size:16px;
+    line-height:24px;
+  }
+
+  .video-author,
+  .video-stats{
+    font-size:14px;
+  }
+
+}
+
+/* ==========================
+   17C SIDEBAR
+========================== */
+
+.sidebar-layout{
+  display:flex;
+  border:1px solid #ddd;
+  margin-top:20px;
+}
+
+.sidebar{
+  width:80px;
+  border-right:1px solid #ddd;
+  padding-top:10px;
+}
+
+.sidebar-item{
+  text-align:center;
+  padding:15px 0;
+  font-size:12px;
+}
+
+.content{
+  flex:1;
+  padding:15px;
+}
+
+.content-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+/* ==========================
+   EXPANDED SIDEBAR
+========================== */
+
+@media (min-width:1200px){
+
+  .sidebar{
+    width:200px;
+  }
+
+  .sidebar-item{
+    text-align:left;
+    padding-left:20px;
+    font-size:14px;
+  }
+
+}
+
+hr{
+  margin:30px 0;
+}
+</style>
+</head>
+<body>
+
+<!-- ======================
+     17A
+====================== -->
+
+<div class="exercise">
+
+  <h2>17A - Responsive Text using Media Queries</h2>
+
+  <div class="video-grid">
+
+    <div class="video-card">
+
+      <img src="Rwar1.png"
+           class="thumbnail"
+           alt="thumbnail">
+
+      <div class="video-info">
+
+        <img src="Fotos.png"
+             class="profile-picture"
+             alt="Oliver">
+
+        <div>
+
+          <div class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </div>
+
+          <div class="video-author">
+            Oliver
+          </div>
+
+          <div class="video-stats">
+            3.4M views · 6 months ago
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="video-card">
+
+      <img src="Rwar2.png"
+           class="thumbnail"
+           alt="thumbnail">
+
+      <div class="video-info">
+
+        <img src="Fotos2.png"
+             class="profile-picture"
+             alt="Mimi">
+
+        <div>
+
+          <div class="video-title">
+            Try Not To Laugh Challenge #9
+          </div>
+
+          <div class="video-author">
+            Mimi
+          </div>
+
+          <div class="video-stats">
+            19M views · 4 years ago
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="video-card">
+
+      <img src="Rwar3.png"
+           class="thumbnail"
+           alt="thumbnail">
+
+      <div class="video-info">
+
+        <img src="Fotos3.jpg"
+             class="profile-picture"
+             alt="Rex">
+
+        <div>
+
+          <div class="video-title">
+            Crazy TikToks Taken Moments Before Disaster
+          </div>
+
+          <div class="video-author">
+            Rex
+          </div>
+
+          <div class="video-stats">
+            12M views · 1 year ago
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<hr>
+
+<!-- ======================
+     17B
+====================== -->
+
+<div class="exercise">
+
+  <h2>17B - Add More Videos to the Grid</h2>
+
+  <p>
+    Optional Exercise:
+    tambahkan 6 video lagi ke dalam video-grid
+    sehingga total menjadi 12 video seperti project YouTube akhir.
+  </p>
+
+</div>
+
+<hr>
+
+<font color="red">
+<u>
+<h1>Challenge Exercise</h1>
+</u>
+</font>
+
+<br>
+
+<!-- ======================
+     17C
+====================== -->
+
+<div class="exercise">
+
+  <h2>17C - Responsive Sidebar</h2>
+
+  <div class="sidebar-layout">
+
+    <div class="sidebar">
+
+      <div class="sidebar-item">
+        Home
+      </div>
+
+      <div class="sidebar-item">
+        Explore
+      </div>
+
+      <div class="sidebar-item">
+        Subscriptions
+      </div>
+
+      <div class="sidebar-item">
+        Originals
+      </div>
+
+      <div class="sidebar-item">
+        YouTube Music
+      </div>
+
+      <div class="sidebar-item">
+        Library
+      </div>
+
+    </div>
+
+    <div class="content">
+
+      <div class="content-grid">
+
+        <div class="video-card">
+
+          <img src="Rwar1.png"
+               class="thumbnail">
+
+          <div class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </div>
+
+        </div>
+
+        <div class="video-card">
+
+          <img src="Rwar2.png"
+               class="thumbnail">
+
+          <div class="video-title">
+            Try Not To Laugh Challenge #9
+          </div>
+
+        </div>
+
+        <div class="video-card">
+
+          <img src="Rwar3.png"
+               class="thumbnail">
+
+          <div class="video-title">
+            Frontend Web Development Overview
+          </div>
+
+        </div>
+
+        <div class="video-card">
+
+          <img src="Rwar1.png"
+               class="thumbnail">
+
+          <div class="video-title">
+            Anything You Can Fit In The Circle
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

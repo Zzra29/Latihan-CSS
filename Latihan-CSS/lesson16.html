@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 16 Exercises - Finish the Project</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:white;
+  color:black;
+  padding:20px;
+}
+
+.exercise{
+  margin-bottom:50px;
+}
+
+h2{
+  margin-bottom:15px;
+}
+
+a{
+  text-decoration:none;
+  color:black;
+}
+
+/* ======================
+   Video Card
+====================== */
+
+.video-card{
+  width:320px;
+}
+
+.thumbnail-container{
+  position:relative;
+  margin-bottom:10px;
+}
+
+.thumbnail{
+  width:100%;
+  display:block;
+}
+
+.video-time{
+  position:absolute;
+  bottom:8px;
+  right:8px;
+
+  background:black;
+  color:white;
+
+  font-size:12px;
+  padding:4px 6px;
+  border-radius:2px;
+}
+
+.video-info-grid{
+  display:grid;
+  grid-template-columns:50px 1fr;
+}
+
+.channel-picture-container{
+  position:relative;
+  display:inline-block;
+}
+
+.profile-picture{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  object-fit:cover;
+  cursor:pointer;
+}
+
+.video-title{
+  font-weight:bold;
+  margin-bottom:8px;
+  line-height:20px;
+}
+
+.video-author,
+.video-stats{
+  color:gray;
+  font-size:14px;
+}
+
+.video-author{
+  margin-bottom:4px;
+}
+
+/* ======================
+   Tooltip
+====================== */
+
+.channel-tooltip{
+  position:absolute;
+
+  display:flex;
+  align-items:center;
+
+  background:white;
+
+  width:230px;
+
+  padding:12px;
+
+  border-radius:6px;
+
+  box-shadow:0 0 10px rgba(0,0,0,.2);
+
+  bottom:-85px;
+  left:0;
+
+  opacity:0;
+
+  pointer-events:none;
+
+  transition:opacity .15s;
+
+  z-index:100;
+}
+
+.channel-picture-container:hover .channel-tooltip{
+  opacity:1;
+}
+
+.tooltip-picture{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  object-fit:cover;
+
+  margin-right:10px;
+}
+
+.tooltip-name{
+  font-size:16px;
+  font-weight:bold;
+  margin-bottom:4px;
+}
+
+.tooltip-subs{
+  color:gray;
+  font-size:14px;
+}
+
+/* ======================
+   Header Tooltip Demo
+====================== */
+
+.header-icons{
+  display:flex;
+  gap:20px;
+}
+
+.icon-container{
+  position:relative;
+}
+
+.icon{
+  width:40px;
+  height:40px;
+  background:#e5e5e5;
+  border-radius:50%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  cursor:pointer;
+}
+
+.tooltip{
+  position:absolute;
+
+  background:gray;
+  color:white;
+
+  font-size:12px;
+
+  padding:8px;
+
+  border-radius:3px;
+
+  white-space:nowrap;
+
+  bottom:-45px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  opacity:0;
+
+  pointer-events:none;
+
+  transition:opacity .15s;
+}
+
+.icon-container:hover .tooltip{
+  opacity:1;
+}
+</style>
+</head>
+<body>
+
+<!-- 16A -->
+
+<div class="exercise">
+  <h2>16A - Header Tooltips</h2>
+
+  <div class="header-icons">
+
+    <div class="icon-container">
+      <div class="icon">+</div>
+      <div class="tooltip">Create</div>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon">🔔</div>
+      <div class="tooltip">Notifications</div>
+    </div>
+
+    <div class="icon-container">
+      <div class="icon">☰</div>
+      <div class="tooltip">Menu</div>
+    </div>
+
+  </div>
+</div>
+
+<hr><br>
+
+<!-- 16B -->
+
+<div class="exercise">
+  <h2>16B - Clickable Video Title</h2>
+
+  <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+     target="_blank">
+
+    <p class="video-title">
+      Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+
+  </a>
+</div>
+
+<hr><br>
+
+<!-- 16C -->
+
+<div class="exercise">
+  <h2>16C - Clickable Thumbnail & Channel Picture</h2>
+
+  <div class="video-card">
+
+    <div class="thumbnail-container">
+
+      <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+         target="_blank">
+
+        <img
+          src="Rwar1.png"
+          class="thumbnail"
+          alt="thumbnail">
+
+      </a>
+
+      <div class="video-time">
+        14:20
+      </div>
+
+    </div>
+
+    <div class="video-info-grid">
+
+      <a href="https://youtube.com"
+         target="_blank">
+
+        <img
+          src="Fotos.png"
+          class="profile-picture"
+          alt="Oliver">
+
+      </a>
+
+      <div>
+
+        <div class="video-title">
+          Talking Tech and AI with Google CEO Sundar Pichai!
+        </div>
+
+        <div class="video-author">
+          Oliver
+        </div>
+
+        <div class="video-stats">
+          3.4M views · 6 months ago
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<hr><br>
+
+<font color="red">
+<u>
+<h1>Challenge Exercise</h1>
+</u>
+</font>
+
+<!-- 16D -->
+
+<div class="exercise">
+
+  <h2>16D - Channel Tooltip</h2>
+
+  <div class="video-card">
+
+    <div class="thumbnail-container">
+
+      <img
+        src="Rwar1.png"
+        class="thumbnail"
+        alt="thumbnail">
+
+      <div class="video-time">
+        14:20
+      </div>
+
+    </div>
+
+    <div class="video-info-grid">
+
+      <div class="channel-picture-container">
+
+        <img
+          src="Fotos.png"
+          class="profile-picture"
+          alt="Oliver">
+
+        <div class="channel-tooltip">
+
+          <img
+            src="Fotos.png"
+            class="tooltip-picture"
+            alt="Oliver">
+
+          <div>
+
+            <div class="tooltip-name">
+              Oliver
+            </div>
+
+            <div class="tooltip-subs">
+              2M subscribers
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <div class="video-title">
+          Talking Tech and AI with Google CEO Sundar Pichai!
+        </div>
+
+        <div class="video-author">
+          Oliver
+        </div>
+
+        <div class="video-stats">
+          3.4M views · 6 months ago
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
